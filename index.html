@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link href="style.css" rel="stylesheet"> 
+</head> 
+
+<body class="body_content"> 
+    <header> 
+     <img src="image/icon.jpeg" alt=""> 
+     <button class="btn_historic" onclick="getListHistoric()">Histórico</button> 
+    </header> 
+    <h3 class="titule">Você sobreviveria a um apocalipse zumbi ?</h3> 
+
+    <div class="modal_result"> <div class="modal_info"> 
+        <img src="#" class="img_result"> 
+        <p class="result"></p> 
+        <a href="#1" class="try_button">tentar novamente</a> 
+    </div> 
+</div> 
+
+<div class="modal_form"> 
+ <div> 
+    <input class="input" type="text" placeholder="digite seu nome"> 
+    <button class="btn_save">salvar</button> 
+ </div> 
+</div> 
+
+<div class="modal_historic"> 
+    <div class="modal_table"> 
+      <div> 
+        <h2>Histórico</h4> 
+        <button class="btn_close"><i class="bi bi-x-lg"></i></button> 
+      </div> 
+    
+    <table> 
+        <tr> 
+            <th>Sobrevivente</th> 
+            <th>Probabilidade</th> 
+            <th>Apagar</th> 
+        </tr> 
+    </table> 
+    
+    <p class="msg_historic"></p> 
+</div> 
+</div> 
+
+<div class="container"> </div> 
+<button class="btn_score" onclick="viewScore()">Pontuação</button> 
+<footer class="footer"> 
+    <p>Desenvolvedor Wagner &copy; - 2023</p> 
+</footer> 
+
+</body> 
+</html> 
+
+<script src="script.js"></script>

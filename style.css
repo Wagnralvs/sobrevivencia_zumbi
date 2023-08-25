@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"); 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"); 
+
+*{ margin: 0; 
+    padding: 0; 
+    font-family: "Poppins"; 
+} 
+
+html{ 
+    height: 100%; 
+    width: 100%; 
+} 
+.body_content{ 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url(image/camuflagem2.jpeg); 
+    background-size:cover; 
+} 
+header { 
+    width: 100%; 
+    height: 50px; 
+    top: 0; 
+    background-color: rgb(135, 210, 135); 
+    color: white; 
+    display: flex; 
+    justify-content:space-between; 
+    padding: 0.4rem; 
+} 
+header img{ 
+    width: 50px; 
+    height: 50px; 
+    background-color: transparent; 
+    color: transparent; 
+    margin-left: 1rem; 
+    animation: efect 1.5s linear infinite; 
+} 
+header .btn_historic{ 
+    background-color: transparent; 
+    color: white; 
+    font-weight: 600; 
+    border: 1px solid; 
+    width: 8rem;
+     margin-right: 1rem ; 
+    border-radius: 6px; 
+} 
+
+header .btn_historic:hover{ 
+     background-color: rgb(138, 239, 138); 
+    
+} 
+.modal_form{ 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    height: 22rem; 
+    background-image: url(image/login.jpg); 
+    background-position:center; 
+    background-repeat:no-repeat ; 
+    background-size: cover; 
+    box-shadow: 2px 2px 3px 3px rgb(13, 59, 37); 
+} 
+.modal_form div{ 
+    display: flex; 
+    padding: 1rem; 
+    width: 80%; 
+    max-width: 40rem; 
+    height: 60px; 
+} 
+.modal_form div .input{ 
+    background-color: rgb(215, 241, 215); 
+    color: rgb(12, 12, 12); 
+    border: none; 
+    border-radius: 6px 0px 0px 6px; 
+    box-shadow: 2px 2px 2px 2px rgba(230, 231, 229, 0.623); 
+    padding: 1rem;
+    width: 100%; 
+}  
+
+.btn_save{ 
+    width: 8rem; 
+    color: white; 
+    border-radius: 0px 6px 6px 0px; 
+    border: none; 
+    background-color: #2db37e; 
+    box-shadow: 2px 2px 2px 2px rgba(230, 231, 229, 0.623); 
+} 
+
+.btn_save:hover{ 
+    background-color: #23a873; 
+} 
+h3{ 
+    color: white; 
+    padding: 1rem; 
+} 
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: none; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    width: auto; 
+    gap: 3rem; 
+    padding: 1rem 0; 
+} 
+.cards { 
+    background-color: white; 
+    background: linear-gradient(rgb(209, 239, 197), rgb(18, 50, 5)) ; 
+    cursor: pointer; 
+    padding: 0.8rem; 
+    display: flex; 
+    width: 75%; 
+    height: 33rem; 
+    max-width: 35rem; 
+    border-radius: 6px; 
+    box-shadow: 2px 2px 2px 2px rgba(105, 130, 81, 0.623); 
+} 
+.cards div{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:space-around; 
+    align-items:center; 
+    width: 100%; 
+} 
+img{ 
+    width: 100%; 
+    height: 9rem; 
+    justify-self: center; 
+} 
+.buttons{ 
+    display:grid; 
+    gap: 0.5rem; 
+    width: 100%; 
+} 
+.buttons button { 
+    width: 100%; 
+    padding: 0.6rem 0.6rem; 
+    font-weight: 500;
+    border-radius: 5px; 
+    border: none; 
+    box-shadow: 2px 2px 2px rgb(229, 199, 199); 
+    cursor: pointer; 
+    background-color: rgb(187, 187, 210); 
+    font-family: "Poppins"; 
+} 
+.btn_score { 
+    display: none; 
+    padding: 0.8rem 1rem; 
+    border-radius: 7px; 
+    border: none; 
+    box-shadow: 2px 2px 2px rgb(229, 199, 199); 
+    cursor: pointer; 
+    background-color:#12ad6f; 
+    color: azure; 
+    margin-bottom: 3rem; 
+} 
+.btn_score:hover { 
+    background-color:#27c585; 
+} 
+button:hover {
+     background-color: rgb(147, 147, 180); 
+} 
+button:focus { 
+    background-color: rgb(8, 120, 32); 
+} 
+.modal_historic{ 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem; 
+    position: fixed; 
+    height: 100%; 
+    top:0; 
+    width: 100%; 
+    background-color: rgb(187, 187, 210, 0.7); 
+} 
+.modal_historic .modal_table{ 
+    display:flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 85%; 
+    max-height: 400px;
+     max-width: 450px; 
+    border-radius: 6px; 
+    padding: 3rem; 
+    background-color: #0dad6d; 
+    color: white; 
+    box-shadow: 2px 2px 2px 2px rgba(89, 91, 88, 0.623); 
+} 
+.modal_historic table{ 
+    overflow-y: auto; 
+    padding: 0.5rem; 
+    display: flex; 
+    flex-direction: column; 
+} 
+.modal_historic table tr th{ 
+    cursor: pointer;
+     width: 9.5rem; 
+    padding: 0.5rem; 
+    font-size: 1.2rem; 
+    background-color: #108f5c; 
+    color: white; 
+    overflow: hidden; 
+    box-shadow: 2px 2px 2px 2px rgba(89, 91, 88, 0.623); 
+} 
+.modal_historic table ul { 
+    cursor: pointer; 
+    width: 100%; 
+    padding: 0.5rem; 
+    font-size: 1.2rem; 
+    background-color: #e0eae6; 
+    color: white; 
+    box-shadow: 2px 2px 2px 2px rgba(89, 91, 88, 0.623); 
+} 
+.modal_historic table tr th i{ 
+    width: 100%; 
+    height: 100%; 
+    cursor: pointer; 
+    position: relative; 
+} 
+.modal_historic table tr th i:hover{ 
+    color: rgb(44, 74, 52); 
+} 
+.modal_table div { 
+    display: flex; 
+    width: 100%; 
+    justify-content: space-around; 
+    border-bottom: 1px solid white; 
+    margin-bottom: 2rem; 
+} 
+.modal_table div .btn_close{ 
+    display: flex; 
+    background-color: transparent; 
+    cursor: pointer; 
+    border: none; 
+    font-size: 1.5rem; 
+    justify-self: end; 
+    color: white; 
+    position: relative; 
+} 
+.modal_table div .btn_close:hover:after{ 
+    content: 'fechar'; 
+    position: absolute; 
+    font-size: 0.8rem; 
+    bottom: 10px ; 
+    right: -50px; 
+} 
+.modal_result{ 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem; 
+    position: fixed; 
+    height: 100%; 
+    top:0; 
+    width: 100%; 
+    background-color: rgb(187, 187, 210, 0.5); 
+} 
+.modal_result .modal_info{ 
+    display:flex; 
+    flex-direction: column; 
+    color: azure; 
+    justify-content: center; 
+    gap: 1rem; 
+    align-items: center; 
+    width: 85%; 
+    max-width: 450px; 
+    border-radius: 6px; 
+    padding: 1rem; 
+    box-shadow: 2px 2px 2px 2px rgba(89, 91, 88, 0.623); 
+} 
+.modal_result .modal_info .try_button{ 
+    width: 12rem; 
+    background-color: transparent; 
+    color: azure; 
+    padding: 0.6rem 0.6rem; 
+    font-weight: 500; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px rgb(69, 69, 69); 
+    border: 1px solid azure; 
+    font-weight: 500; 
+    text-decoration: none; 
+} 
+.modal_result .modal_info .try_button:hover{ 
+    background-color: rgb(149, 149, 149, 0.3); 
+} 
+.footer{ 
+    width: 100%; 
+    bottom: 0; 
+    margin-top: 2rem; 
+    background-color: #219567; 
+    position: fixed; 
+} 
+    .footer p{ 
+        text-align: center; 
+        color: white; 
+    } 
+    @keyframes efect {
+         0% {
+         transform: translate3d( 4px, 3px, 0px); 
+    } 
+    50% {
+         transform: translate3d( 0, 0, 0); 
+    } 
+    100% { 
+        transform: translate3d( 4px, 3px, 0px); 
+    } 
+}
+     @media (max-width:750px) { 
+        .cards{ 
+        width: 86%; 
+        height: 32rem; 
+    } 
+    h4{ 
+        font-size: 0.8rem; 
+    } 
+    .modal_historic table tr th{ 
+        width: 6.2rem; 
+        padding: 0.9rem; 
+        font-size: 0.8rem; 
+    } 
+    .modal_form div{
+         width: 90%; 
+    } 
+    .modal_form{
+         height: 38rem; 
+    } 
+}
