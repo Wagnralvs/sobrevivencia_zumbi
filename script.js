@@ -260,7 +260,7 @@ const getHistoric = async () => {
     const quest_18 = { 
      quest: `Você está em uma cidade que já está tomanda com infectados, os governadores e comandantes da cidade
          já fecharam completamente todas as saídas e dentro 12 horas iram bombardear toda a cidade, o que faria ?`, 
-     img: 'image/quest18.jpg', 
+     img: 'image/quest18.jpeg', 
      answers1: { action: 'Tentaria fungir pelos esgostos mesmo sabendo que lá também está lotado de infectados', score: 2 }, 
      answers2: { action: 'Tentaria se proteger nos Metros', score: 5 }, 
      answers3: { action: 'Tentaria gravar tudo e postar se possivel todo o ocorrido para não acontecer novamente', score: 1 }, 
